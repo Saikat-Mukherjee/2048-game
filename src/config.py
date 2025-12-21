@@ -1,0 +1,98 @@
+"""
+Configuration file for 2048 game
+Contains colors, sizes, and game settings
+"""
+
+# Window settings
+WINDOW_WIDTH = 500
+WINDOW_HEIGHT = 700
+FPS = 60
+
+# Grid settings
+GRID_SIZE = 4
+GRID_PADDING = 10
+TILE_SIZE = 106
+GRID_BACKGROUND = (187, 173, 160)
+EMPTY_TILE_COLOR = (205, 193, 180)
+
+# Color scheme for tiles (tile_value: (background_color, text_color))
+TILE_COLORS = {
+    0: ((205, 193, 180), (0, 0, 0)),
+    2: ((238, 228, 218), (119, 110, 101)),
+    4: ((237, 224, 200), (119, 110, 101)),
+    8: ((242, 177, 121), (249, 246, 242)),
+    16: ((245, 149, 99), (249, 246, 242)),
+    32: ((246, 124, 95), (249, 246, 242)),
+    64: ((246, 94, 59), (249, 246, 242)),
+    128: ((237, 207, 114), (249, 246, 242)),
+    256: ((237, 204, 97), (249, 246, 242)),
+    512: ((237, 200, 80), (249, 246, 242)),
+    1024: ((237, 197, 63), (249, 246, 242)),
+    2048: ((237, 194, 46), (249, 246, 242)),
+    4096: ((60, 58, 50), (249, 246, 242)),
+    8192: ((0, 0, 0), (249, 246, 242)),
+}
+
+# UI Colors
+BACKGROUND_COLOR = (250, 248, 239)
+SCORE_BOG_BG = (187, 173, 160)
+SCORE_TEXT_COLOR = (238, 228, 218)
+SCORE_VALUE_COLOR = (255, 255, 255)
+BUTTON_COLOR = (143, 122, 102)
+BUTTON_HOVER_COLOR = (158, 137, 117)
+BUTTON_TEXT_COLOR = (249, 246, 242)
+GAME_OVER_OVERLAY = (238, 228, 218, 230)
+GAME_OVER_TEXT = (119, 110, 101)
+
+# Font sizes
+TITLE_FONT_SIZE = 60
+SCORE_LABEL_SIZE = 18
+SCORE_VALUE_SIZE = 28
+TILE_FONT_SIZES = {
+    2: 55,
+    4: 55,
+    8: 55,
+    16: 50,
+    32: 50,
+    64: 50,
+    128: 45,
+    256: 45,
+    512: 45,
+    1024: 35,
+    2048: 35,
+    4096: 30,
+    8192: 30,
+}
+
+# Animation settings
+ANIMATION_SPEED = 0.3  # seconds
+MERGE_ANIMATION_SPEED = 0.15
+NEW_TILE_ANIMATION_SPEED = 0.2
+
+# Game settings
+WIN_TILE = 2048
+
+# Menu settings
+MENU_BUTTON_WIDTH = 200
+MENU_BUTTON_HEIGHT = 50
+MENU_BUTTON_SPACING = 20
+MENU_TITLE_SIZE = 80
+MENU_SUBTITLE_SIZE = 24
+
+# Menu colors
+MENU_BUTTON_COLOR = (143, 122, 102)
+MENU_BUTTON_HOVER = (158, 137, 117)
+MENU_BUTTON_TEXT = (249, 246, 242)
+MENU_TITLE_COLOR = (119, 110, 101)
+MENU_SUBTITLE_COLOR = (187, 173, 160)
+
+# High scores settings
+HIGH_SCORE_TITLE_SIZE = 40
+HIGH_SCORE_ENTRY_SIZE = 24
+HIGH_SCORE_TEXT_COLOR = (119, 110, 101)
+HIGH_SCORE_RANK_COLOR = (187, 173, 160)
+
+# Control panel settings
+CONTROL_PANEL_HEIGHT = 80
+CONTROL_BUTTON_WIDTH = 120
+CONTROL_BUTTON_HEIGHT = 40
